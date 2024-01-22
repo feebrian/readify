@@ -15,3 +15,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'index');
 Route::view('/books/bumi-manusia', 'show');
+Route::view('/login', 'login');
+Route::view('/register', 'register');
