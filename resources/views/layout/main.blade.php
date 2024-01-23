@@ -10,10 +10,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     @vite('resources/css/app.css')
     <title>Readify</title>
+
+    <style>
+        * {
+            /* border: 1px solid red */
+        }
+    </style>
 </head>
 
-<body class="min-h-screen flex flex-col mx-20 font-poppins">
+<body class="min-h-screen flex flex-col bg-[#f0f2f5] font-poppins">
     @yield('sub-layout')
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </body>
 
 </html>

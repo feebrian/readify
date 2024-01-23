@@ -1,7 +1,7 @@
 @extends('layout.app')
 
 @section('content')
-    <div class="flex items-center flex-1 justify-start">
+    <div class="mx-20 flex items-center flex-1 justify-start">
         <div>
             <h1 class="text-7xl font-bold">Selamat datang di <br> Digital Library</h1>
             <p class="mt-7 text-2xl">Temukan ribuan judul dengan cara yang lebih praktis<br> dan modern. Jelajahi literasi

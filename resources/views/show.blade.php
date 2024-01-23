@@ -129,7 +129,7 @@
                 <h2 class="uppercase text-xl font-semibold tracking-widest text-gray-500">Ulasan</h2>
             </div>
 
-            <div class="flex gap-4 mt-4 mb-14">
+            {{-- <div class="flex gap-4 mt-4 mb-14">
                 <div>
                     <img src="/img/kaneki.jpg" alt="kaneki" class="w-16 rounded-full">
                 </div>
@@ -176,9 +176,10 @@
                             </div>
                         </div>
                         <p class="text-[#676767]">unamee</p>
-                        <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quos. Omnis,
-                            minus quas? Vero, non rerum quasi ipsum repudiandae ad, soluta magnam reiciendis omnis, corrupti
-                            neque maiores officiis voluptates accusantium?</p>
+                        @if (Str::length($review_body) > 100)
+                            <p class="mt-4">{{ Str::limit($review_body, 150, '') }} <button class="tog"></button>
+                            </p>
+                        @endif
                     </div>
                 </div>
             </div>
@@ -230,18 +231,26 @@
                             </div>
                         </div>
                         <p class="text-[#676767]">unamee</p>
-                        <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quos. Omnis,
-                            minus quas? Vero, non rerum quasi ipsum repudiandae ad, soluta magnam reiciendis omnis, corrupti
-                            neque maiores officiis voluptates accusantium?</p>
+                        <p class="mt-4"></p>
                     </div>
                 </div>
-            </div>
+            </div> --}}
+
+            <x-review id="1" reviewer="{{ $reviewer }}" review-body="{{ $review_body }}"
+                date-published="{{ $date_published }}" />
+            <x-review id="1" reviewer="{{ $reviewer }}" review-body="{{ $review_body }}"
+                date-published="{{ $date_published }}" />
 
 
         </div>
-
-        <!-- <div class="col-start-9 col-span-2">
-                <h1 class="mt-16 text-2xl font-semibold text-end">Related Books</h1>
-              </div> -->
     </div>
+
+    {{-- <script>
+        $(document).ready(function() {
+            $('.toggle-button').click(function() {
+                const review = $(this).closest('.review');
+                review.find('.review-content')
+            })
+        })
+    </script> --}}
 @endsection
