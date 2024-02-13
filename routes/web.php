@@ -1,6 +1,10 @@
 <?php
 
-use App\Http\Controllers\AuthController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\LogoutController;
+use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\TestController;
+use App\Http\Controllers\User\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,8 +27,27 @@ Route::view('/books/bumi-manusia', 'show', [
     neque maiores officiis voluptates accusantium?',
     'date_published' => 'February 21, 2006'
 ]);
-Route::view('/login', 'login');
-Route::view('/register', 'register');
-Route::view('/books', 'books', ['title' => 'Bumi Manusia',]);
+
 Route::view('/users/adamfebrian', 'user');
-Route::post('/authenticate', [AuthController::class, 'authenticate'])->name('authentication');
+
+Route::middleware('auth')->group(function () {
+    Route::view('/books', 'books', [
+        'title' => 'Bumi kita',
+        'judul_halaman' => 'Books',
+    ]);
+    Route::get('/profile', [ProfileController::class, 'show'])->name('profile.show');
+    Route::post('/logout', [LogoutController::class, 'logout'])->name('logout.perform');
+    Route::view('/trending', 'trending', [
+        'judul_halaman' => 'Trending',
+    ]);
+});
+
+Route::middleware('guest')->group(function () {
+    Route::post('/register', [RegisterController::class, 'register'])->name('register.perform');
+    Route::get('/register', [RegisterController::class, 'show'])->name('register.show');
+
+    Route::get('/login', [LoginController::class, 'show'])->name('login.show');
+    Route::post('/login', [LoginController::class, 'authenticate'])->name('login.perform');
+});
+
+Route::resource('test', TestController::class);

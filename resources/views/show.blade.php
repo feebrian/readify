@@ -2,40 +2,40 @@
 
 @section('content')
     <div class="grid grid-cols-12 gap-8 mt-8">
-        <div class="col-start-3 col-span-2">
+        <div class="col-span-2 col-start-3">
             <img src="/img/bumi-manusia.jpg" alt="bumi-manusia" class="w-96">
         </div>
-        <div class="col-start-5 col-span-6">
+        <div class="col-span-6 col-start-5">
             <h2 class="text-3xl font-semibold">Bumi Manusia</h2>
             <p class="text-gray-600">By Pramoedya Ananta Toer | Published 1980</p>
-            <div class="flex items-center mt-1 gap-2">
+            <div class="flex items-center gap-2 mt-1">
                 <div class="flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFC700"
-                        class="feather feather-star w-6 h-6">
+                        class="w-6 h-6 feather feather-star">
                         <polygon
                             points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                         </polygon>
                     </svg>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFC700"
-                        class="feather feather-star w-6 h-6">
+                        class="w-6 h-6 feather feather-star">
                         <polygon
                             points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                         </polygon>
                     </svg>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFC700"
-                        class="feather feather-star w-6 h-6">
+                        class="w-6 h-6 feather feather-star">
                         <polygon
                             points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                         </polygon>
                     </svg>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFC700"
-                        class="feather feather-star w-6 h-6">
+                        class="w-6 h-6 feather feather-star">
                         <polygon
                             points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                         </polygon>
                     </svg>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFC700"
-                        class="feather feather-star w-6 h-6">
+                        class="w-6 h-6 feather feather-star">
                         <polygon
                             points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                         </polygon>
@@ -43,10 +43,10 @@
                 </div>
                 <span class="font-semibold">5.0</span>
             </div>
-            <p class="text-gray-700 mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati id officia odit
+            <p class="mt-6 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati id officia odit
                 tempora. Itaque culpa iusto, ab nostrum obcaecati fugiat, eaque, corrupti dolores earum quaerat aut vitae
                 beatae possimus quis <span
-                    class="underline text-blue-500 cursor-pointer hover:text-blue-600 transition ease-in-out duration-150">more...</span>
+                    class="text-blue-500 underline transition duration-150 ease-in-out cursor-pointer hover:text-blue-600">more...</span>
             </p>
 
             <div class="grid grid-cols-6 mt-8 gap-y-1.5">
@@ -68,16 +68,16 @@
 
             <div class="flex gap-4 mt-8">
                 <button
-                    class="bg-blue-500 w-24 h-10 rounded-md text-white font-medium hover:bg-blue-600 transition ease-in-out duration-150">Pinjam</button>
+                    class="w-24 h-10 font-medium text-white transition duration-150 ease-in-out bg-blue-500 rounded-md hover:bg-blue-600">Pinjam</button>
                 <button
-                    class="bg-slate-50 w-24 h-10 rounded-md text-gray-500 border-2 border-gray-300 font-medium hover:bg-gray-200 transition ease-in-out duration-150">Preview</button>
+                    class="w-24 h-10 font-medium text-gray-500 transition duration-150 ease-in-out border-2 border-gray-300 rounded-md bg-slate-50 hover:bg-gray-200">Preview</button>
             </div>
 
         </div>
 
-        <div class="col-start-3 col-span-6">
+        <div class="col-span-6 col-start-3">
             <div class="mt-16">
-                <h2 class="uppercase text-xl font-semibold tracking-widest text-gray-500">Tulis Ulasan</h2>
+                <h2 class="text-xl font-semibold tracking-widest text-gray-500 uppercase">Tulis Ulasan</h2>
             </div>
             <div class="flex gap-4 mt-2">
                 <div>
@@ -89,44 +89,44 @@
                     <div class="flex justify-between mt-2">
                         <div class="flex items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFC700"
-                                class="feather feather-star w-6 h-6">
+                                class="w-6 h-6 feather feather-star">
                                 <polygon
                                     points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                                 </polygon>
                             </svg>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFC700"
-                                class="feather feather-star w-6 h-6">
+                                class="w-6 h-6 feather feather-star">
                                 <polygon
                                     points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                                 </polygon>
                             </svg>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFC700"
-                                class="feather feather-star w-6 h-6">
+                                class="w-6 h-6 feather feather-star">
                                 <polygon
                                     points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                                 </polygon>
                             </svg>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFC700"
-                                class="feather feather-star w-6 h-6">
+                                class="w-6 h-6 feather feather-star">
                                 <polygon
                                     points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                                 </polygon>
                             </svg>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFC700"
-                                class="feather feather-star w-6 h-6">
+                                class="w-6 h-6 feather feather-star">
                                 <polygon
                                     points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                                 </polygon>
                             </svg>
                         </div>
                         <button
-                            class="w-24 h-10 text-white text-lg font-medium rounded-md bg-blue-500 hover:bg-blue-600 transition ease-in-out duration-150">Send</button>
+                            class="w-24 h-10 text-lg font-medium text-white transition duration-150 ease-in-out bg-blue-500 rounded-md hover:bg-blue-600">Send</button>
                     </div>
                 </div>
             </div>
 
             <div class="mt-12">
-                <h2 class="uppercase text-xl font-semibold tracking-widest text-gray-500">Ulasan</h2>
+                <h2 class="text-xl font-semibold tracking-widest text-gray-500 uppercase">Ulasan</h2>
             </div>
 
             {{-- <div class="flex gap-4 mt-4 mb-14">
@@ -141,31 +141,31 @@
                                     <p class="text-xl">Adam Febrian</p>
                                     <div class="flex items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFC700"
-                                            class="feather feather-star w-5 h-5">
+                                            class="w-5 h-5 feather feather-star">
                                             <polygon
                                                 points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                                             </polygon>
                                         </svg>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFC700"
-                                            class="feather feather-star w-5 h-5">
+                                            class="w-5 h-5 feather feather-star">
                                             <polygon
                                                 points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                                             </polygon>
                                         </svg>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFC700"
-                                            class="feather feather-star w-5 h-5">
+                                            class="w-5 h-5 feather feather-star">
                                             <polygon
                                                 points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                                             </polygon>
                                         </svg>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFC700"
-                                            class="feather feather-star w-5 h-5">
+                                            class="w-5 h-5 feather feather-star">
                                             <polygon
                                                 points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                                             </polygon>
                                         </svg>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFC700"
-                                            class="feather feather-star w-5 h-5">
+                                            class="w-5 h-5 feather feather-star">
                                             <polygon
                                                 points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                                             </polygon>
@@ -196,31 +196,31 @@
                                     <p class="text-xl">Adam Febrian</p>
                                     <div class="flex items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFC700"
-                                            class="feather feather-star w-5 h-5">
+                                            class="w-5 h-5 feather feather-star">
                                             <polygon
                                                 points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                                             </polygon>
                                         </svg>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFC700"
-                                            class="feather feather-star w-5 h-5">
+                                            class="w-5 h-5 feather feather-star">
                                             <polygon
                                                 points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                                             </polygon>
                                         </svg>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFC700"
-                                            class="feather feather-star w-5 h-5">
+                                            class="w-5 h-5 feather feather-star">
                                             <polygon
                                                 points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                                             </polygon>
                                         </svg>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFC700"
-                                            class="feather feather-star w-5 h-5">
+                                            class="w-5 h-5 feather feather-star">
                                             <polygon
                                                 points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                                             </polygon>
                                         </svg>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFC700"
-                                            class="feather feather-star w-5 h-5">
+                                            class="w-5 h-5 feather feather-star">
                                             <polygon
                                                 points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                                             </polygon>
@@ -236,7 +236,7 @@
                 </div>
             </div> --}}
 
-            <x-review id="1" reviewer="{{ $reviewer }}" review-body="{{ $review_body }}"
+            <x-review id="{{ $id }}" reviewer="{{ $reviewer }}" review-body="{{ $review_body }}"
                 date-published="{{ $date_published }}" />
             <x-review id="1" reviewer="{{ $reviewer }}" review-body="{{ $review_body }}"
                 date-published="{{ $date_published }}" />
